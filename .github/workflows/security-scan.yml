@@ -26,6 +26,7 @@ jobs:
       
     - name: Run npm audit
       run: npm audit --production
+      continue-on-error: false  # Now fails the workflow if vulnerabilities are found
       
     - name: Run Snyk to check for vulnerabilities
       uses: snyk/actions/node@master
