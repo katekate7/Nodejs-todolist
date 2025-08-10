@@ -6,7 +6,7 @@
   "scripts": {
     "development": "nodemon src",
     "start": "node src",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --setupFiles=./tests/setup.js"
   },
   "author": "Eren OKUR",
   "license": "MIT",
@@ -19,5 +19,9 @@
     "jsonwebtoken": "^9.0.0",
     "mongoose": "^7.0.3",
     "node-fetch": "^2.7.0"
+  },
+  "devDependencies": {
+    "jest": "^30.0.5",
+    "supertest": "^7.1.4"
   }
 }

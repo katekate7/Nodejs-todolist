@@ -51,6 +51,10 @@ app.get("/", (req, res) => {
   res.json({ message: "Server active." });
 });
 
-app.listen(process.env.APP_PORT, () => {
+// Start server and export for testing
+const server = app.listen(process.env.APP_PORT, () => {
   console.log(`Example app listening on port ${process.env.APP_PORT}`);
 });
+
+// Export app and server for testing
+module.exports = { app, server };
