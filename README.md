@@ -1,10 +1,16 @@
-### Node.js Express Todo Application with MongoDB CRUD REST API and JWT Authentication
+# Node.js Express Todo Application
+
+[![Node.js CI](https://github.com/katekate7/Nodejs-todolist/actions/workflows/node-ci.yml/badge.svg)](https://github.com/katekate7/Nodejs-todolist/actions/workflows/node-ci.yml)
+[![Docker Build](https://github.com/katekate7/Nodejs-todolist/actions/workflows/docker-build.yml/badge.svg)](https://github.com/katekate7/Nodejs-todolist/actions/workflows/docker-build.yml)
+[![Security Scan](https://github.com/katekate7/Nodejs-todolist/actions/workflows/security-scan.yml/badge.svg)](https://github.com/katekate7/Nodejs-todolist/actions/workflows/security-scan.yml)
+[![CodeQL](https://github.com/katekate7/Nodejs-todolist/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/katekate7/Nodejs-todolist/actions/workflows/codeql-analysis.yml)
 
 This is a simple To-Do application built with Node.js and Express. The API allows users to perform CRUD operations on a list of tasks, and requires JWT authentication to access. The data is stored in a MongoDB database.
-Requirements
 
-    Node.js
-    MongoDB
+## Requirements
+
+- Node.js
+- MongoDB
 
 ## Installation
 
@@ -60,6 +66,23 @@ To access the API endpoints that require authentication, you need to provide a J
 ```
 Authorization: Bearer your-jwt-token
 ```
+
+## DevOps & CI/CD
+
+This project is fully equipped with CI/CD pipelines using GitHub Actions:
+
+- **Continuous Integration**: Automated tests run on each push and pull request
+- **Security Scanning**: Regular security scans to identify vulnerabilities
+- **Docker Integration**: Automated Docker image building and publishing
+- **Dependency Checks**: Regular checks for outdated dependencies
+- **Static Code Analysis**: CodeQL analysis for code quality and security issues
+- **Automated Deployment**: Deployment pipeline for production environments
+
+See the `.github/workflows` directory for detailed workflow configurations.
+
+## Deployment
+
+For deployment instructions, see [DEPLOYMENT.md](./DEPLOYMENT.md).
 
 ## License
 
